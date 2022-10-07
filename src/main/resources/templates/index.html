@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Concesionario Piramide</h1>
+
+</head>
+<body>
+
+<a href="/inicio">Coches</a>  <a href="/formulario"> Nuevo </a><br>
+<form action="/busquedaMatricula" method="GET">
+<input type="search" name="matricula" placeholder="Introduce aquí la matricula">
+<input type="submit" value="Buscar">
+</form>
+<ul th:each="coche: ${coches}">
+  <li th:text="'Matricula: '+ ${coche.matricula}"></li>
+  <p th:text="'Marca: '+ ${coche.marca}"></p>
+  <p th:text="'Modelo: ' + ${coche.modelo}"></p>
+  <p th:text="'Km: ' + ${coche.km}"></p>
+
+</ul>
+</body>
+</html>

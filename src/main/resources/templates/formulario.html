@@ -1,0 +1,24 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Concesionario Piramide</h1>
+</head>
+
+
+<a href="/inicio">Coches</a><a href="/formulario"> Añadir </a><br>
+<form action="/busquedaMatricula" method="GET">
+<input type="search"  name="matricula" placeholder="Introduce aquí la matricula">
+<input type="submit"  value="Buscar">
+</form>
+<form action="/index" method="POST">
+    Matricula:<input name="matricula"  type="text"><br>
+    Marca:<input name="marca"   type="text"><br>
+    Modelo:<input name="modelo"   type="text"><br>
+    Km:<input name="km"   type="number"><br>
+    <button>Añadir</button>
+</form>
+</ul>
+</body>
+</html>
+
